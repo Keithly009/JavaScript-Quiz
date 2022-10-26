@@ -43,6 +43,19 @@ header {
 .quiz-header { 
     padding: 3.67rem;
 }
+
+.choice-container:hover {
+    background-color: rgba(1, 2, 2, 0.459);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.choice-text {
+    padding-left: 30px;
+    padding-top: 10px;
+    width: 100%;
+}
+
 h3 { 
     padding: .89rem; 
     text-align: center; 

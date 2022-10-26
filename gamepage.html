@@ -14,34 +14,25 @@
             </div>
     </header> 
 
-    <div class="quiz-holder" id="quiz"> 
-        <div class="quiz-header">
-            <h3 id="question"> Answer precisely to what the question requests </h2>
-            <ul>
-                <li>
-                    <input type="radio" name="answer" id="a" class="answer">
-                    <label for="a" id="a_text"> Answer </label>
-                </li>
-                
-                <li>
-                    <input type="radio" name="answer" id="b" class="answer">
-                    <label for="b" id="b_text"> Answer </label>
-                </li>
-                 
-                <li>
-                    <input type="radio" name="answer" id="c" class="answer">
-                    <label for="c" id="c_text"> Answer </label>
-                </li>
-                 
-                <li>
-                    <input type="radio" name="answer" id="d" class="answer">
-                    <label for="d" id="d_text"> Answer </label>
-                </li>
-                
-            </ul> 
+    <div id="game">
+        <h2 id="question">Please answer every question. You will lose time for each incorrect answer!</h2>
+        <div class="choice-container">
+            <p class="choice-prefix">A</p>
+            <p class="choice-text" data-number="1">Choice 1</p>
+        </div>
+        <div class="choice-container">
+            <p class="choice-prefix">B</p>
+            <p class="choice-text" data-number="2">Choice 2</p>
+        </div>
+        <div class="choice-container">
+            <p class="choice-prefix">C</p>
+            <p class="choice-text" data-number="3">Choice 3</p>
+        </div>
+        <div class="choice-container">
+            <p class="choice-prefix">D</p>
+            <p class="choice-text" data-number="4">Choice 4</p>
         </div>
 
-        <button id="submit">Submit</button>
         <script src="./assets/gp.js"></script>
     </div>
 
