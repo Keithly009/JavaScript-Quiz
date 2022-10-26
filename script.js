@@ -51,5 +51,29 @@ const quizdata = [
 ];
 
 const quiz = document.getElementById('quiz') 
-const answerEls = document.querySelectorAll('.answer'); 
-const questioEls = document.getElementById('question') 
+const answerEls = document.querySelectorAll('.answer') 
+const questioEls = document.getElementById('question')
+const a_text = document.getElementById('a_text')
+const b_text = document.getElementById('b_text')
+const c_text = document.getElementById('c_text')
+const d_text = document.getElementById('d_text')
+const submitBtn = document.getElementById('submit')
+
+let currentQuiz = 0 
+let score = 0 
+
+loadquiz()
+
+function loadquiz() {
+    
+    deselectanswers()
+
+    const currentQuizData = quizData[currentQuiz]
+
+    questionEl.innerText =  currentQuizData.question
+    a_text.innertext = currentQuizData.a 
+    b_text.innertext = currentQuizData.b 
+    c_text.innertext = currentQuizData.c 
+    d_text.innertext = currentQuizData.d 
+}
+
