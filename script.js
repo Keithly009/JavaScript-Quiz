@@ -31,6 +31,8 @@ const quizdata = [
         question: "Which of the following operators will return the value as true? Assume that both variables are the same number and are not strings.", 
         a: "x == y", 
         b: "x===y", 
+        c: "x ~ y",
+        d: "y + x",  
         correct: "a", 
         
         question: "When combining a number to a string or two strings together it is known as a what?", 
@@ -70,10 +72,23 @@ function loadquiz() {
 
     const currentQuizData = quizData[currentQuiz]
 
-    questionEl.innerText =  currentQuizData.question
+    questionEl.innerText = currentQuizData.question
     a_text.innertext = currentQuizData.a 
     b_text.innertext = currentQuizData.b 
     c_text.innertext = currentQuizData.c 
     d_text.innertext = currentQuizData.d 
 }
 
+function deselectanswers() {
+    answerEls.forEach(answerEls => answerEls.checked = false)
+} 
+
+function getSelected() { 
+    let answerEls 
+    answerEls.forEach(answerEl => { 
+        if(answerEl.checked) { 
+            answer = answerEl.id 
+        }
+    })
+    return answer
+}
