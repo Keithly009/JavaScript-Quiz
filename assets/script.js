@@ -1,3 +1,4 @@
+// Create Questions for Quiz
 const quizdata = [ 
     {
         question: "Javascript is what kind of language? Choose the answer that best fits!",
@@ -52,6 +53,8 @@ const quizdata = [
 
 ];
 
+// Constants In the Quiz -> move to a file specifically for the gamepage iteslf to clean up code. 
+
 const quiz = document.getElementById('quiz') 
 const answerEls = document.querySelectorAll('.answer') 
 const questioEls = document.getElementById('question')
@@ -92,3 +95,24 @@ function getSelected() {
     })
     return answer
 }
+
+submitBtn.addEventListener('click', () => {
+    const answer = getSelected()
+    if(answer) {
+       if(answer === quizData[currentQuiz].correct) { 
+            score +++
+       {}} 
+    
+        currentQuiz++ 
+    
+        if(currentQuiz < quizData.length) { 
+            loadquiz()
+    }   else {
+            quiz.innerhtml = `
+            <h2> You Answered ${score}/${quizData.length} questions correctly</h2> 
+
+            <button onclick="location.reload()"> Reload</button> 
+            `
+        }
+    }
+})
