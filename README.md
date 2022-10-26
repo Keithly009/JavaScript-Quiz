@@ -6,3 +6,4 @@ stored in the local storage leaving you with a blank slate. There were reference
 of now (10/25/2022) the code still remains without functionality. 
 
 
+![Week-4 homework](https://user-images.githubusercontent.com/113906981/197949840-9b5dcf15-2ac3-4c52-bd5c-6fa48e1ab631.PNG)
